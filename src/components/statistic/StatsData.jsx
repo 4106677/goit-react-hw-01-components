@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const StatsData = ({ data: { id, label, percentage } }) => {
   return (
     <div>
@@ -5,4 +7,11 @@ export const StatsData = ({ data: { id, label, percentage } }) => {
       <span>{percentage}%</span>
     </div>
   );
+};
+
+StatsData.propTypes = {
+  data: PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }).isRequired,
 };
