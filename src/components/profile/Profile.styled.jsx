@@ -11,8 +11,6 @@ export const CardBox = styled.div`
 
   box-shadow: 0 0 10px #c6cccced;
   border-radius: 10px;
-
-  color: #122236;
 `;
 
 export const PersonalInfo = styled.div`

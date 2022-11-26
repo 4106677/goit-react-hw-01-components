@@ -1,19 +1,35 @@
 import PropTypes from 'prop-types';
 
 import { StatsData } from './StatsData';
+import { Section, Header, StatsList, StatsItem } from './Statistics.styled';
+
+const createColor = () => {
+  const color =
+    'rgba(' +
+    Math.round(Math.random() * 255) +
+    ',' +
+    Math.round(Math.random() * 255) +
+    ',' +
+    Math.round(Math.random() * 255) +
+    ',' +
+    0.5 +
+    ')';
+
+  return color;
+};
 
 export const Statistics = ({ stats }) => {
   return (
-    <section>
-      <h2>Upload stats</h2>
-      <ul>
+    <Section>
+      <Header>Upload stats</Header>
+      <StatsList>
         {stats.map(data => (
-          <li key={data.id}>
+          <StatsItem key={data.id} style={{ backgroundColor: createColor() }}>
             <StatsData data={data} />
-          </li>
+          </StatsItem>
         ))}
-      </ul>
-    </section>
+      </StatsList>
+    </Section>
   );
 };
 

@@ -15,8 +15,8 @@ export const App = () => {
     <div>
       <GlobalStyle />
       <Profile user={users} />
-      <FriendsList friends={friends} />
       <Statistics stats={stats} />
+      <FriendsList friends={friends} />
       <TransactionHistory transaction={transaction} />
     </div>
   );
