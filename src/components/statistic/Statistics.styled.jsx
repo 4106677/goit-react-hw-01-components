@@ -4,6 +4,7 @@ export const Section = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
 
   margin: 30px auto;
 
@@ -14,6 +15,7 @@ export const Section = styled.section`
   background-color: #fff;
 
   width: 400px;
+  height: 125px;
 `;
 
 export const Header = styled.h2`

@@ -18,10 +18,10 @@ const createColor = () => {
   return color;
 };
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <Section>
-      <Header>{Header && 'Upload stats'}</Header>
+      {title && <Header>{title}</Header>}
       <StatsList>
         {stats.map(data => (
           <StatsItem key={data.id} style={{ backgroundColor: createColor() }}>
