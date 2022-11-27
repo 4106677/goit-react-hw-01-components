@@ -56,21 +56,21 @@ export const TableRow = styled.tr`
   padding: 5px;
 `;
 
-export const RowType = styled.tr`
+export const RowType = styled.td`
   width: calc(100% / 3);
   padding-left: 70px;
 
   text-transform: capitalize;
 `;
 
-export const RowAmount = styled.tr`
+export const RowAmount = styled.td`
   width: calc(100% / 3);
   text-align: right;
 
   padding-right: 85px;
 `;
 
-export const Currency = styled.tr`
+export const Currency = styled.td`
   width: calc(100% / 3);
   text-align: center;
 `;

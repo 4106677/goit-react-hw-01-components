@@ -43,6 +43,8 @@ export const StatsItem = styled.li`
 
   padding: 10px;
 
+  color: #fff;
+
   &:last-child {
     border-radius: 0 0 10px 0;
   }

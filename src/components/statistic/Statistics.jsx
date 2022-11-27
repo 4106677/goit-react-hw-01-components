@@ -6,11 +6,11 @@ import { Section, Header, StatsList, StatsItem } from './Statistics.styled';
 const createColor = () => {
   const color =
     'rgba(' +
-    Math.round(Math.random() * 255) +
+    Math.round(Math.random() * 100) +
     ',' +
-    Math.round(Math.random() * 255) +
+    Math.round(Math.random() * 180) +
     ',' +
-    Math.round(Math.random() * 255) +
+    Math.round(Math.random() * 250) +
     ',' +
     0.5 +
     ')';
