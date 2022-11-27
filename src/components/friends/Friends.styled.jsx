@@ -21,7 +21,27 @@ export const Status = styled.span`
   height: 15px;
 
   border-radius: 100%;
-  background-color: red;
+
+  /*
+  background-color: ${props => {
+    console.log(props.isOnline);
+    switch (props.isOnline) {
+      case 'true':
+        return 'black';
+      default:
+        return 'red';
+    }
+  }};
+  */
+
+  background-color: ${props => {
+    console.log(props.isOnline);
+    if (props.isOnline) {
+      return '#43b247';
+    } else {
+      return '#e80808';
+    }
+  }}};
 `;
 
 export const FriendItem = styled.li`
