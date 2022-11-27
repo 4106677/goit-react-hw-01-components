@@ -21,7 +21,7 @@ const createColor = () => {
 export const Statistics = ({ stats }) => {
   return (
     <Section>
-      <Header>Upload stats</Header>
+      <Header>{Header && 'Upload stats'}</Header>
       <StatsList>
         {stats.map(data => (
           <StatsItem key={data.id} style={{ backgroundColor: createColor() }}>
