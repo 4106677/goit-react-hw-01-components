@@ -25,10 +25,14 @@ export const PersonalInfo = styled.div`
 `;
 
 export const Avatar = styled.img`
-  padding: 40px 100px;
-  width: 100%;
+  padding: 40px;
+  width: 280px;
+  height: 280px;
 
   border-radius: 100%;
+
+  display: block;
+  object-fit: cover;
 `;
 
 export const UserName = styled.h2`
