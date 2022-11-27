@@ -16,6 +16,14 @@ export const FriendList = styled.ul`
   background-color: #fff;
 `;
 
+export const Status = styled.span`
+  width: 15px;
+  height: 15px;
+
+  border-radius: 100%;
+  background-color: red;
+`;
+
 export const FriendItem = styled.li`
   &:not(:last-child) {
     border-bottom: 1px solid rgb(192 205 220);
@@ -25,10 +33,11 @@ export const FriendItem = styled.li`
 
   display: flex;
   flex-direction: row;
+  align-items: center;
 
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
 `;
 
 export const FriendAvatar = styled.img`
-  margin: 0 10px;
+  margin: 0 15px;
 `;
